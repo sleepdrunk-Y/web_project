@@ -3,7 +3,6 @@ $(function () {
     getUserInfo()
     var layer = layui.layer
 
-
     // 获取用户的基本信息
     function getUserInfo() {
         $.ajax({
@@ -24,7 +23,6 @@ $(function () {
         })
     }
 
-
     // 渲染用户的头像
     function renderAvatar(user) {
         // 1. 获取用户的昵称 (首先渲染用户昵称，如果没有昵称，使用用户的登录名)
@@ -43,7 +41,6 @@ $(function () {
 
         }
     }
-
 
     // 点击退出按钮，实现退出功能
     $("#btnLogout").on('click', function () {
